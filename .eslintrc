@@ -1,0 +1,44 @@
+{
+  "plugins": ["prettier"],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "eqeqeq": "error",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-use-before-define": "off",
+    "dot-notation": "off",
+    "radix": 0,
+    "react/forbid-prop-types": "off",
+    "react/self-closing-comp": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.test.jsx"],
+      "rules": {
+        "react/jsx-no-constructed-context-values": "off",
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  }
+}

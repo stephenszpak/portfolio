@@ -1,0 +1,21 @@
+import PropTypes from "prop-types";
+import React, { createContext, useCallback, useContext, useState, useMemo } from "react";
+
+export const {{pascalCase name}}Context = createContext();
+
+export const {{pascalCase name}}Provider = ({ children }) => {
+  const [{{camelCase name}}Data, set{{pascalCase name}}Data] = useState(null);
+
+const value = useMemo(() => {
+  {{camelCase name}}Data
+}, [{{camelCase name}}Data])
+
+
+  return <{{pascalCase name}}Context.Provider value={value} >{children}</{{pascalCase name}}Context.Provider>;
+}
+
+{{pascalCase name}}Provider.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
+};
+
+export const use{{pascalCase name}} = () => useContext({{pascalCase name}}Context);

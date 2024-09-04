@@ -1,0 +1,57 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "description": "portfolio website",
+  "private": true,
+  "scripts": {
+    "start": "env-cmd -f .env react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src/ --fix",
+    "lint-warn": "eslint ./src/ -c .eslintrc.warn.json",
+    "generate": "plop",
+    "format": "prettier --write ./src/"
+  },
+  "author": "Stephen Szpak",
+  "license": "ISC",
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "kebab-case": "^2.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^8.0.2",
+    "plop": "^4.0.1",
+    "prettier": "^3.3.3",
+    "prettier-eslint-cli": "^8.0.1",
+    "pretty-quick": "^4.0.0",
+    "prop-types": "^15.8.1",
+    "sass": "^1.78.0"
+  },
+  "peerDependencies": {
+    "inquirer": "9.3.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
